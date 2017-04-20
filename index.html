@@ -9,14 +9,12 @@
       <h1>Enter A Detailed Question:</h1>
       <input id="question" type="text" placeholder="How tall is the Birj Khalifa"/>
       <button onclick="go()">Submit</button>
-	    <iframe src="" id="answer"></iframe> 
     </center>
 		<script type="text/javascript">
 			function go() {
       var input = document.getElementById('question').value;
-	var answer = document.getElementById('answer').src;				
       var url = encodeURIComponent(input);
-     answer = "https://api.wolframalpha.com/v1/result?appid=3J8J64-5L8EWG2R6E&i="+url+"%3F";
+      window.open("https://api.wolframalpha.com/v1/result?appid=3J8J64-5L8EWG2R6E&i="+url+"%3F","_blank")
       }
 		</script>
 	</body>	
